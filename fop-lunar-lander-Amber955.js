@@ -1,3 +1,7 @@
+function setup() {
+  createCanvas(580, 550);
+}
+
 // The game's variables
 const initialSpeed = 0.9;
 let velocity = initialSpeed;
@@ -14,10 +18,6 @@ let rocket = {
 let landed = false;
 let crashed = false;
 let youWin = false;
-
-function setup() {
-  createCanvas(600, 550);
-}
 
 function draw() {
   background("#2E1A47");
