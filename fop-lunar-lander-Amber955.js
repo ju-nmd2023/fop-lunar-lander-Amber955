@@ -16,7 +16,7 @@ let crashed = false;
 let youWin = false;
 
 function setup() {
-  createCanvas(800, 550);
+  createCanvas(600, 550);
 }
 
 function draw() {
