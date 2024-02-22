@@ -97,7 +97,7 @@ function drawGameScreen() {
   }
 
   //ask in the lap!
-  if (rocket.y + rocket.height >= height - 40) {
+  if (rocket.y + rocket.height >= height - 80) {
     if (velocity < 5) {
       gameState = "result";
       youWin = true;
