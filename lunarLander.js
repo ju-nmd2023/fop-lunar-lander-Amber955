@@ -43,7 +43,7 @@ function drawBlinkingStars() {
     fill(255);
     noStroke();
     ellipse(
-      //Inspired by https://medium.com/@cldiegoj/quick-guide-into-creative-coding-with-p5-js-add64d83880f
+      //Inspired by
       starsBackground.locationX,
       starsBackground.locationY,
       starsBackground.size,
@@ -119,7 +119,7 @@ function drawMoon() {
   drawCrater(30, 490, 95, 35, 42, 490, 70, 35);
   drawCrater(115, 445, 45, 35, 118, 445, 40, 35);
 }
-//inspired by https://editor.p5js.org/lucidprojects/sketches/z-1j6o7f3
+//inspired by
 function drawCrater(
   outerX,
   outerY,
@@ -135,7 +135,7 @@ function drawCrater(
   fill(185, 166, 218);
   ellipse(innerX, innerY, innerW, innerH);
 }
-//inspired by https://editor.p5js.org/lucidprojects/sketches/z-1j6o7f3
+//inspired by
 function drawRocket() {
   push();
 
