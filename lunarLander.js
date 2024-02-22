@@ -43,7 +43,7 @@ function drawBlinkingStars() {
     fill(255);
     noStroke();
     ellipse(
-      //inspired by https://medium.com/@cldiegoj/quick-guide-into-creative-coding-with-p5-js-add64d83880f
+      //Inspired by https://medium.com/@cldiegoj/quick-guide-into-creative-coding-with-p5-js-add64d83880f
       starsBackground.locationX,
       starsBackground.locationY,
       starsBackground.size,
