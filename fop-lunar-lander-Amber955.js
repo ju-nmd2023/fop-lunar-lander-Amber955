@@ -54,7 +54,7 @@ function drawBlinkingStars() {
 
 function drawStartScreen() {
   fill(255);
-  rect(159, 332, 200, 50);
+  rect(159, 332, 200, 50, 20);
   textSize(20);
   fill(0);
   text("Play Game", 255, 354);
@@ -205,4 +205,43 @@ function drawResultScreen() {
   } else if (crashed) {
     text("You lost!", width / 2, height / 2);
   }
+}
+
+function drawResultScreen() {
+  fill(255);
+  textSize(32);
+  textAlign(CENTER, CENTER);
+  if (youWin) {
+    text("You won!", width / 2, height / 2);
+  } else if (crashed) {
+    text("You lost!", width / 2, height / 2);
+  }
+
+  // Restart button
+  fill(255);
+  rect(229, 400, 120, 50, 20);
+  textSize(20);
+  fill(0);
+  text("Restart", 289, 425);
+
+  if (
+    mouseX >= 229 &&
+    mouseX <= 349 &&
+    mouseY >= 400 &&
+    mouseY <= 450 &&
+    mouseIsPressed
+  ) {
+    resetGame();
+  }
+}
+
+//resetfuction
+function resetGame() {
+  velocity = initialSpeed;
+  rocket.x = 250;
+  rocket.y = 217;
+  gameState = "start";
+  landed = false;
+  crashed = false;
+  youWin = false;
 }
