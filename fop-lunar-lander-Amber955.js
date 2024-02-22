@@ -112,7 +112,7 @@ function drawGameScreen() {
 function drawMoon() {
   noStroke();
   fill(252, 201, 224);
-  ellipse(250, 590, 655, 365);
+  ellipse(250, 590, 655, 465);
   drawCrater(100, 620, 95, 65, 105, 620, 80, 65);
   drawCrater(10, 580, 65, 25, 20, 580, 45, 25);
   drawCrater(80, 530, 65, 15, 85, 530, 55, 15);
