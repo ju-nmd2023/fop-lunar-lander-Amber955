@@ -38,7 +38,7 @@ function drawBlinkingStars() {
       // The object
       locationX: random(width), //Between 0 and the canvas width
       locationY: random(height),
-      size: random(1, 4),
+      size: random(1, 3),
     };
     fill(255);
     noStroke();
